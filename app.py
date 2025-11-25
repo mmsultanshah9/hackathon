@@ -9,7 +9,7 @@ st.title("📊 Banggood Data Analysis Dashboard")
 
 st.write("Upload the cleaned CSV file to start analysis.")
 
-uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
+df = pd.read_csv("cleaned_replaced_banggood.csv")
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
